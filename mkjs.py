@@ -15,7 +15,6 @@ html_template = """<!DOCTYPE html>
 """
 
 # dir/file structure ('folder name', [list of file names to create]) in a list.
-js_project_boilerplate = [('js', ['main.js', 'test.js']), ('css', ['custom_style.css']), 'index.html']
 
 def make_project(files_list):
 	try:
@@ -34,4 +33,5 @@ def make_project(files_list):
 		sys.stdout.write('Files with same name already available.')
 
 if __name__ == '__main__':
+	js_project_boilerplate = [('js', ['main.js', 'test.js']), ('css', ['custom_style.css']), 'index.html']
 	make_project(js_project_boilerplate)
